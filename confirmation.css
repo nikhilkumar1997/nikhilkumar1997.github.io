@@ -1,0 +1,96 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    .flex-container {
+        display: flex;
+    }
+    
+    .container1 {
+        flex: 50%;
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    
+    .container2 {
+        background-color: #eaeaea;
+        flex: 50%;
+        padding-left: 50px;
+        text-align: left;
+    }
+    
+    .content {
+        padding-top: 40px;
+        align-items: center;
+    }
+    
+    .field {
+        display: flex;
+    }
+    
+    .wrap {
+        margin-top: 40px;
+    }
+    
+    .button2 {
+        background-color: blue;
+        padding: 10px 75px;
+    }
+    
+    .link1 {
+        padding-top: 50px;
+    }
+    
+    .wname span {
+        display: block;
+    }
+    
+    .tab1 th {
+        padding-bottom: 50px;
+        font-weight: 100;
+    }
+    
+    .tab2 th {
+        padding-bottom: 60px;
+    }
+    
+    .amount td {
+        padding-bottom: 20px;
+    }
+    
+    .delivery {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    
+    .pagef {
+        margin-left: 100px;
+        padding-top: 50px;
+    }
+    
+    .pagef a {
+        padding-left: 40%;
+    }
+    
+    .vv {
+        padding-top: 20px;
+    }
+    
+    .p {
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+    
+    .ee {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .sp {
+        padding-left: 80px;
+    }
+    
+    .pagef i {
+        margin-left: 40px;
+    }

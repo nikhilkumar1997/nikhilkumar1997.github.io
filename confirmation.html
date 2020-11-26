@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confirmation.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="container1">
+            <nav>
+                <a href="info.html" style=" text-decoration: none; margin-right: 20px;">1.Information</a>
+                <a href="delivery.html" style=" text-decoration: none; margin-right: 20px;">2.Delivery</a>
+                <a href="payment.html" style=" text-decoration: none; margin-right: 20px;">3.Payment</a>
+                <a href="confirmation.html" style=" text-decoration: none; margin-right: 20px;">4.Confirmation</a>
+            </nav>
+            <header class="wrap">
+                <div>
+                    <h1 style="margin-bottom: 0px;">Delivery adress</h1>
+                </div>
+            </header>
+            <div class="content">
+                <script src="info.js"></script>
+                <form onsubmit="return validation()" action="">
+
+                    <div class="field">
+                        <p>jan Kowalski<br> Al.Jerozolimskie<br>00-123 Warsaw<br>Poland<br>mazowieckie</p>
+                    </div>
+                    <h1 class="ee">Shipping service</h1>
+                    <div>
+                        <p class="vv">
+                            <input type="checkbox" name="delivery"> <label name="delivery">Standard Delivery<b class="sp">FREE</b></label>
+
+                        </p>
+                    </div>
+                    <div>
+                        <h1 class="ee">Payment method</h1>
+                        <p class="vv">
+
+                            <input type="checkbox" name="bill"> <label name="bill">Paypal</label>
+
+                        </p>
+                    </div>
+                    <div class="link1">
+
+                        <input class="button2" type="button" name="button" value="Confirm order" style="margin-left: 50%;">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container2">
+            <table id="right" style="width: 100%;padding: 20px;">
+                <thead class="tab">
+                    <tr class="tab1">
+                        <th class="head1" colspan="1">Your Cart</th>
+                        <th class="edit" colspan="5" style="text-align: right;"><a href="">Edit</a></th>
+                    </tr>
+                    <tr class="tab2">
+                        <th class="imgshock" rowspan="2">
+                            <img class="watch" src="wat.png" width="50px" height="50px"></th>
+                        <th class="title">
+                            <p class="wname">Mens Casio G-Steel
+                                <span>GST-W100G-1BER</span></p>
+                        </th>
+                        <th class="price" style="text-align:right; font-weight: bold;">$3749.00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="amount">
+                        <td>Subtotal</td>
+                        <td style="font-weight: bold; text-align: right;" colspan="3 ">$3749.00</td>
+                    </tr>
+                    <tr class="amount">
+                        <td>Shipping</td>
+                        <td style="text-align: right;" colspan="3 ">Calculated at next step</td>
+                    </tr>
+                    <tr class="amount">
+                        <td>Taxes (estimated)</td>
+                        <td style="font-weight: bold; text-align: right;" colspan="3 ">$187.45</td>
+                    </tr>
+                    <tr class="amount">
+                        <td>Tokens</td>
+                        <td style="text-align: right; font-weight: bold;" colspan="3 ">4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td style="text-align: right; font-weight: bold;" colspan="3">$3936.45</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="pagef">
+        <div>
+            <p>© 2020 all rights reserved
+                <a href="" style="text-decoration: none;">Privacy & Cookies  Terms & Condition</a>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</html>
