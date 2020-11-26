@@ -120,4 +120,8 @@
         display: block;
         padding-left: 0%s;
     }
+    .container1,.state,button2{
+         margin-left:0%;
+        
+    }
 }
