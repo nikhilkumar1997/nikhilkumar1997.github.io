@@ -16,8 +16,8 @@
     .container2 {
         background-color: #eaeaea;
         flex: 50%;
-        padding-left: 100px;
-        padding-bottom: 20px;
+        padding: 20px 70px;
+        overflow: auto;
     }
     
     .content {
@@ -86,4 +86,23 @@
     
     .pagef i {
         margin-left: 40px;
+    }
+    
+    @media( max-width:800px) {
+        body {
+            padding: 30px;
+        }
+        .nav,
+        .flex-container,
+        .field,
+        .link1 {
+            flex-wrap: wrap;
+        }
+        .pagef {
+            flex-direction: column;
+        }
+        .icon {
+            display: block;
+            padding-left: 0%S;
+        }
     }
