@@ -10,7 +10,7 @@
 .container1 {
     flex: 50%;
     margin-top: 15px;
-    margin-left: 100px;
+    padding-left: 100px;
 }
 
 .container2 {
@@ -81,4 +81,23 @@
 
 .pagef i {
     margin-left: 40px;
+}
+
+@media( max-width:800px) {
+    body {
+        padding: 30px;
+    }
+    .nav,
+    .flex-container,
+    .field,
+    .link1 {
+        flex-wrap: wrap;
+    }
+    .pagef {
+        flex-direction: column;
+    }
+    .icon {
+        display: block;
+        padding-left: 0%S;
+    }
 }
