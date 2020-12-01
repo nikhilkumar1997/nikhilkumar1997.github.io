@@ -7,6 +7,10 @@
         display: flex;
     }
     
+    body {
+        margin-top: 50px;
+    }
+    
     .container1 {
         flex: 50%;
         margin-top: 15px;
@@ -17,7 +21,6 @@
         background-color: #eaeaea;
         flex: 50%;
         padding: 20px 70px;
-        overflow: auto;
     }
     
     .content {
@@ -29,6 +32,18 @@
         display: flex;
     }
     
+    input {
+        padding: 10px;
+    }
+    
+    select {
+        padding: 10px 45px;
+    }
+    
+    .field label {
+        margin-bottom: 10px;
+    }
+    
     .field div {
         margin: 0 25px 25px 0;
     }
@@ -38,7 +53,7 @@
     }
     
     .state {
-        margin-left: 90px;
+        margin-left: 20px;
     }
     
     .wrap {
@@ -48,6 +63,8 @@
     .button2 {
         background-color: blue;
         padding: 10px 75px;
+        margin-left: 150px;
+        border-radius: 5px;
     }
     
     .link1 {
@@ -91,6 +108,8 @@
     @media( max-width:800px) {
         body {
             padding: 30px;
+            margin: 0%;
+            width: 100%;
         }
         .nav,
         .flex-container,
@@ -100,12 +119,37 @@
         }
         .pagef {
             flex-direction: column;
+            margin-left: 0%;
+        }
+        .pagef a {
+            padding-left: 0%;
         }
         .icon {
             display: block;
-            padding-left: 0%S;
+            padding-left: 0%;
         }
-       .container1,.state,button2{
-         margin-left:0%;
-        
+        .button2 {
+            margin: 0%;
+        }
+        .container1 {
+            margin-left: 0%;
+            padding-bottom: 50px;
+            padding-left: 0%;
+        }
+        .container2 {
+            padding-left: 0%;
+        }
+        .state {
+            margin-left: 0%;
+        }
+        input {
+            width: 100%;
+        }
+        .feild div {
+            width: 100%;
+            margin: 0 0 25px 0;
+        }
+        select {
+            width: 100%;
+        }
     }
