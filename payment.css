@@ -1,27 +1,23 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .flex-container {
     display: flex;
 }
 
-body {
-    margin-top: 50px;
-}
-
 .container1 {
     flex: 50%;
+    padding-left: 40px;
     margin-top: 15px;
-    padding-left: 100px;
-    border-radius: 5px;
 }
 
 .container2 {
     background-color: #eaeaea;
     flex: 50%;
-    padding-left: 50px;
+    padding: 20px;
 }
 
 .wrap {
@@ -49,6 +45,7 @@ body {
     background-color: blue;
     padding: 10px 75px;
     margin-left: 150px;
+    border-radius: 5px;
 }
 
 .link1 {
@@ -74,6 +71,14 @@ body {
 
 .delivery {
     margin-bottom: 20px;
+}
+
+#right {
+    margin-bottom: 50px;
+}
+
+.fas {
+    margin-right: 20px;
 }
 
 .pagef {
