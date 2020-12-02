@@ -1,10 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-}
-
-body {
-    margin-top: 50px;
+    font-family: sans-serif;
 }
 
 .flex-container {
@@ -14,14 +11,14 @@ body {
 .container1 {
     flex: 50%;
     margin-top: 15px;
-    padding-left: 100px;
+    padding-left: 40px;
 }
 
 .container2 {
     background-color: #eaeaea;
     flex: 50%;
-    padding-left: 50px;
     text-align: left;
+    padding: 20px;
 }
 
 .content {
@@ -75,7 +72,14 @@ body {
 
 .delivery {
     margin-bottom: 20px;
-    padding-left: 20px;
+}
+
+#right {
+    margin-bottom: 50px;
+}
+
+.fas {
+    margin-right: 20px;
 }
 
 .pagef {
