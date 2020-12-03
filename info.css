@@ -137,15 +137,9 @@
             display: block;
             padding-left: 0%;
         }
-        .button2 {
-            margin: 0%;
-        }
         .container1 {
             margin-left: 0%;
             padding-bottom: 50px;
-            padding-left: 0%;
-        }
-        .container2 {
             padding-left: 0%;
         }
         .state {
@@ -160,5 +154,13 @@
         }
         select {
             width: 100%;
+        }
+        .button2 {
+            margin-top: 20px;
+            margin-left: 0%;
+        }
+        .field div {
+            width: 100%;
+            margin: 0 0 25px 0;
         }
     }
