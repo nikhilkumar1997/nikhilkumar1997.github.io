@@ -142,14 +142,11 @@
         padding-left: 0%;
         padding-bottom: 50px;
     }
-    .container2 {
-        padding-left: 0%;
+    .button2 {
+        margin-top: 20px;
     }
     .state {
         margin-left: 0%;
-    }
-    input {
-        width: 100%;
     }
     .feild div {
         width: 100%;
