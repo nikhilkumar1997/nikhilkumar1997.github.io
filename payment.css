@@ -117,6 +117,7 @@
     }
     .button2 {
         margin: 0%;
+        display: block;
     }
     .container1 {
         margin-left: 0%;
