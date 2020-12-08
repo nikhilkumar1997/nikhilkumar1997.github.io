@@ -85,6 +85,7 @@
 .pagef {
     margin-left: 100px;
     padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .pagef a {
@@ -115,7 +116,7 @@
 
 @media( max-width:800px) {
     body {
-        padding: 30px;
+        padding: 5px;
         margin: 0%;
         width: 100%;
         margin-top: 0%;
