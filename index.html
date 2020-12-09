@@ -6,9 +6,6 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="info.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <script src="info.js"></script>
-
-
 </head>
 
 <body>
@@ -27,74 +24,77 @@
                 </div>
             </header>
             <div class="content">
-
                 <form onsubmit="return validation()" action="delivery.html">
-
                     <div class="field">
                         <div>
                             <label name="First name">First name</label>
-                            <input name="First name" placeholder="First name" id="fname">
-                            <pre id="message" style="color: red;"></pre>
+                            <input class="input-name" name="First name" placeholder="First name" id="fname">
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                         <div>
                             <label name="lastname">Last name</label>
-                            <input name="lastname" placeholder="Last name" id="lname">
-                            <pre id="message1" style="color: red;"></pre>
+                            <input class="input-name" name="lastname" placeholder="Last name" id="lname">
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                     </div>
                     <div class="field">
                         <div>
                             <label name="number">Phone number</label>
                             <input name="number" placeholder="Phone number" id="phno">
-                            <pre id="message2" style="color: red;"></pre>
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                         <div>
                             <label name="email">E-mail</label>
                             <input name="email" placeholder="Type e-mail" id="mail">
-                            <pre id="message3" style="color: red;"></pre>
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                     </div>
                     <div class="field">
                         <div>
                             <label name="address1">Address1</label>
-                            <input name="address1" placeholder="type address">
+                            <input class="input-name" name="address1" placeholder="type address">
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                         <div>
                             <label name="address2">Address2</label>
-                            <input name="address2" placeholder="type address">
+                            <input class="input-name" name="address2" placeholder="type address">
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                     </div>
                     <div class="field">
                         <div>
                             <label name="zipcode">Zip code</label>
                             <input name="zipcode" placeholder="type city" id="zip"><br>
-                            <pre id="message5" style="color: red;"></pre>
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                         <div>
                             <label name="city">City</label>
-                            <input name="city" placeholder="type city">
+                            <input class="input-name" name="city" placeholder="type city">
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                     </div>
                     <div class="field">
                         <div>
                             <label name="country">Country</label>
-                            <select name="country">
+                            <select class="select" name="country">
                                 <option value="1">select</option>
                                 <option value="1">India</option>
                                 <option value="2">Australia</option>
                                 <option value="3">USA</option>
                                 <option value="4">UK</option>
                             </select>
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                         <div>
                             <label class="state" name="Country">State</label>
-                            <select class="state" name="state">
+                            <select class="state select" name="state">
                                 <option value="1">select</option>
                                 <option value="1">Karnataka</option>
                                 <option value="2">Melbourne</option>
                                 <option value="3">Texas</option>
                                 <option value="4">Scotland</option>
                             </select>
+                            <div class="err-msg" style="color: red;"></div>
                         </div>
                     </div>
                     <p>
@@ -112,7 +112,6 @@
             </div>
         </div>
         <div class="container2">
-
             <table id="right" style="width: 100%;">
                 <thead class="tab">
                     <tr class="tab1">
@@ -153,7 +152,6 @@
                         <td style="text-align: right; font-weight: bold;" colspan="3">$3936.45</td>
                     </tr>
                 </tfoot>
-
             </table>
             <div class="delivery">
 
@@ -167,8 +165,7 @@
             <a href="" class="link5">Help & FAQ</a>
         </div>
     </div>
-
-
+    <script src="info.js"></script>
 </body>
 <footer>
     <div class="pagef">
