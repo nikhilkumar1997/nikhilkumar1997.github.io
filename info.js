@@ -1,38 +1,78 @@
-function validation() {
-    var res = document.getElementById("fname").value
-    if (res.length == "") {
-        document.getElementById("message").innerHTML = "First name must be filled";
-        return false;
-    } else if (res.lenght <= 3 || res.length >= 15) {
-        document.getElementById("message").innerHTML = "First name must contain 3-15 characters";
-        return false;
-
-    }
-    var res1 = document.getElementById("lname").value;
-    if (res1.length == "") {
-        document.getElementById("message1").innerHTML = "Last name must be filled";
-        return false;
-    } else if (res1.lenght <= 3 || res.lenght >= 15) {
-        document.getElementById("message1").innerHTML = "last name must contain 3-15 characters";
-        return false;
-    }
-    var res2 = document.getElementById("phno").value;
-    if (res2.length == "" || isNaN(res2)) {
-        document.getElementById("message2").innerHTML = "Phone number must be within 0-9";
-        return false;
-
-    }
-    var res3 = document.getElementById("mail");
-    var filter = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
-    if (!filter.test(res3.value)) {
-        document.getElementById("message3").innerHTML = "Please provide valid email address";
-        return false;
-    }
-    var res4 = document.getElementById("zip").value;
-    if (res4.length == "" || isNaN(res4)) {
-        document.getElementById("message4").innerHTML = "Zip code must contain numbers";
-        return false;
-    }
+let inputs = document.getElementsByClassName('input-name');
+let phone = document.getElementById('phno');
+let email = document.getElementById('mail');
+let zipcode = document.getElementById('zip');
+let selectItem = document.getElementsByClassName('select');
 
 
+
+for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', (e) => {
+        if (e.target.value.length < 3 || e.target.value.length > 15) {
+            e.target.nextElementSibling.innerHTML = "Minimun of 3-15 characters are required";
+            return false;
+        } else if (e.target.value.length > 3 || e.target.value.length <= 15) {
+            e.target.nextElementSibling.innerHTML = "";
+            return true;
+        }
+    })
+}
+
+phone.addEventListener('input', (e) => {
+    if (e.target.value == "") {
+        e.target.nextElementSibling.innerHTML = "Please enter your phone number";
+        return false;
+    } else if (e.target.value != "") {
+        var phoneno = /^[0-9]{10}$/;
+        if (!phoneno.test(e.target.value)) {
+            e.target.nextElementSibling.innerHTML = "Please enter a valid phone number";
+            return false;
+        } else {
+            e.target.nextElementSibling.innerHTML = "";
+            return true;
+        }
+    }
+
+})
+email.addEventListener('input', (e) => {
+    if (e.target.value == "") {
+        e.target.nextElementSibling.innerHTML = "Please enter a valid e-mail address.";
+        return false;
+    } else if (email.value != "") {
+        var emailformat = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+        if (!emailformat.test(e.target.value)) {
+            e.target.nextElementSibling.innerHTML = "Please enter a valid email address";
+            return false;
+        } else {
+            e.target.nextElementSibling.innerHTML = "";
+            return true;
+        }
+    }
+})
+zipcode.addEventListener('input', (e) => {
+    if (e.target.value == "") {
+        e.target.nextElementSibling.innerHTML = "Please enter your zipcode";
+        return false;
+    } else if (e.target.value != "") {
+        var zip = /^[0-9]{6}$/;
+        if (!zip.test(e.target.value)) {
+            e.target.nextElementSibling.innerHTML = "Please enter a valid zipcode";
+            return false;
+        } else {
+            e.target.nextElementSibling.innerHTML = "";
+            return true;
+        }
+    }
+})
+
+for (var i = 0; i < selectItem.length; i++) {
+    selectItem[i].addEventListener('click', (e) => {
+        if (e.target.value == "") {
+            e.target.nextElementSibling.innerHTML = "Please select an option";
+            return false;
+        } else {
+            e.target.nextElementSibling.innerHTML = "";
+            return true;
+        }
+    })
 }
